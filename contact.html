@@ -14,7 +14,6 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light px-3">
-      <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Stefanie Serpa</a>
         <button
           class="navbar-toggler"
@@ -28,7 +27,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Bootstrap 5 ml-auto replaced with ms-auto for margin -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">About</a>
@@ -41,16 +39,23 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
-    <div class="card img-fluid" style="width: 500px">
-      <img
-        class="card-img-top"
-        src="img/aboutme.jpeg"
-        alt="Card image"
-        style="width: 100%"
-      />
-      <div class="card-img-overlay">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card img-fluid" style="width: 500px">
+            <img
+              class="card-img-top"
+              src="img/aboutme.jpeg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-img-overlay">
+              <h1 class="card-title">Contact</h1>
+              <hr />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script
