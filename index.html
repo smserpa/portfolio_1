@@ -9,6 +9,20 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <style>
+      body, html {
+        height: 100%;
+      }
+      .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/hero.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+    </style>
     <title>Portfolio</title>
   </head>
   <body>
@@ -42,8 +56,8 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row mt-5 ms-3 p-3">
+    <div class="container-fluid hero-image">
+      <div class="row ms-3 p-3">
         <div class="col-sm-8 col-xs-12">
           <div class="card mx-auto p-3">
             <div class="card-body">
