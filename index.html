@@ -10,12 +10,16 @@
       crossorigin="anonymous"
     />
     <style>
-      body, html {
+      body,
+      html {
         height: 100%;
       }
       .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("img/hero.jpg");
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("img/hero.jpg");
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -31,7 +35,10 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark px-3" style="background-color:black">
+    <nav
+      class="navbar navbar-expand-md navbar-dark px-3"
+      style="background-color: black"
+    >
       <a class="navbar-brand" href="index.html">Stefanie Serpa</a>
       <button
         class="navbar-toggler"
@@ -62,35 +69,47 @@
       </div>
     </nav>
     <div class="container-fluid hero-image">
-      <div class="row ms-3 py-5">
-        <div class="col-sm-8 col-xs-12 my-auto">
-          <div class="card p-3 text-white" style="background:linear-gradient(rgba(143, 103, 103, 0.5),  rgba(0, 0, 0, 0.5));">
+      <div class="row ms-4 py-5">
+        <div class="col-md-8 col-xs-12 my-auto">
+          <div
+            class="card p-3 text-white"
+            style="
+              background: linear-gradient(
+                rgba(143, 103, 103, 0.5),
+                rgba(0, 0, 0, 0.5)
+              );
+            "
+          >
             <div class="card-body">
               <h1 class="card-title">About Me</h1>
               <hr />
               <div class="row">
-                <div class="col-sm-4 col-xs-12">
+                <div class="col-sm-4">
                   <img
-                    src="img/profile.jpeg"
-                    alt="Stefanie Serpa's Headshot"
-                    style="width: 14rem"
-                  />
+                  src="img/profile.jpeg"
+                  alt="Stefanie Serpa's Headshot"
+                  style="width: 13rem"
+                  class="me-2 mb-2 float-left"
+                />
                 </div>
-                <div class="col-sm-8 col-xs-12">
-                  <p class="card-text">
-                    I am a Full-Stack Web Development Student at UCSD Coding
-                    Bootcamp with a background in Chemistry/Life Sciences. As an
-                    avid problem solver my interest in software development grew
-                    with each introduction. Looking forward to expanding my
-                    knowledge in the field and collaborating with other
-                    developers.
+                <div class="col-sm-8">
+                  <p class="card-text float-right">
+                    Full-Stack web developer educated at UC San Diego Extension
+                    Coding Bootcamp that is passionate about problem-solving,
+                    data-analysis, and design. Continuously expanding my technical
+                    skills, I enjoy tackling challenges with innovative ideas and
+                    collaborating with other developers. My aptitude in dynamic web
+                    technologies, in conjunction with a determination for quality
+                    assurance and effective communication skills, has positioned me
+                    well to produce engaging, user-friendly platforms and web
+                    applications.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-xs-12"></div>
       </div>
     </div>
     <footer class="footer p-3">
