@@ -10,10 +10,29 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <style>
+      body, html {
+        height: 100%;
+      }
+      .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/hero.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .footer {
+        background-color: black;
+        display: block;
+        text-align: center;
+      }
+    </style>
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light px-3">
+    <nav class="navbar navbar-expand-md navbar-dark px-3" style="background-color:black">
         <a class="navbar-brand" href="index.html">Stefanie Serpa</a>
         <button
           class="navbar-toggler"
@@ -41,7 +60,11 @@
           </ul>
         </div>
     </nav>
-
+    <footer class="footer p-3">
+      <div class="container">
+        <span class="text-muted">&copy;Copyright</span>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
