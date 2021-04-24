@@ -20,15 +20,15 @@
             rgba(0, 0, 0, 0.5)
           ),
           url("img/hero.jpg");
-        height: 100%;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         position: relative;
       }
       .navbar-brand,
       .about-card {
         margin-left: 30px;
+        overflow: scroll;
       }
       .about-card {
         margin-right: 30px;
@@ -91,29 +91,23 @@
             <div class="card-body">
               <h1 class="card-title">About Me</h1>
               <hr />
-              <div class="row">
-                <div class="col-sm-4">
-                  <img
+              <img
                   src="img/profile.jpeg"
                   alt="Stefanie Serpa's Headshot"
                   style="width: 13rem"
-                  class="me-2 mb-2 float-left"
+                  class="me-2 mb-2"
                 />
-                </div>
-                <div class="col-sm-8">
-                  <p class="card-text float-right">
-                    Full-Stack web developer educated at UC San Diego Extension
-                    Coding Bootcamp that is passionate about problem-solving,
-                    data-analysis, and design. Continuously expanding my technical
-                    skills, I enjoy tackling challenges with innovative ideas and
-                    collaborating with other developers. My aptitude in dynamic web
-                    technologies, in conjunction with a determination for quality
-                    assurance and effective communication skills, has positioned me
-                    well to produce engaging, user-friendly platforms and web
-                    applications.
-                  </p>
-                </div>
-              </div>
+                <p class="card-text">
+                  Full-Stack web developer educated at UC San Diego Extension
+                  Coding Bootcamp that is passionate about problem-solving,
+                  data-analysis, and design. Continuously expanding my technical
+                  skills, I enjoy tackling challenges with innovative ideas and
+                  collaborating with other developers. My aptitude in dynamic web
+                  technologies, in conjunction with a determination for quality
+                  assurance and effective communication skills, has positioned me
+                  well to produce engaging, user-friendly platforms and web
+                  applications.
+                </p>
             </div>
           </div>
         </div>
