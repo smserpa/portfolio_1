@@ -26,6 +26,13 @@
         background-size: cover;
         position: relative;
       }
+      .navbar-brand,
+      .about-card {
+        margin-left: 30px;
+      }
+      .about-card {
+        margin-right: 30px;
+      }
       .footer {
         background-color: black;
         display: block;
@@ -36,7 +43,7 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-md navbar-dark px-3"
+      class="navbar navbar-expand-md navbar-dark pe-2"
       style="background-color: black"
     >
       <a class="navbar-brand" href="index.html">Stefanie Serpa</a>
@@ -52,7 +59,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Bootstrap 5 ml-auto replaced with ms-auto for margin -->
+        <!-- Bootstrap 4 ml-auto replaced with ms-auto for margin -->
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html"
@@ -68,11 +75,12 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid hero-image">
-      <div class="row ms-4 py-5">
-        <div class="col-md-8 col-xs-12 my-auto">
+    <!-- Bootstrap 4 -- px-0 removes padding for container to fill entire width of viewport -->
+    <div class="container-fluid hero-image px-0">
+      <div class="row py-5">
+        <div class="col-md-8 col-xs-12">
           <div
-            class="card p-3 text-white"
+            class="card about-card text-white"
             style="
               background: linear-gradient(
                 rgba(143, 103, 103, 0.5),
