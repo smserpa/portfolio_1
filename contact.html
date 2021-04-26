@@ -11,6 +11,29 @@
       crossorigin="anonymous"
     />
     <style>
+      body,
+      html {
+        height: 100%;
+      }
+      .hero-image {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("img/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+      }
+      .navbar-brand,
+      .contact-card {
+        margin-left: 30px;
+        overflow: scroll;
+      }
+      .contact-card {
+        margin-right: 30px;
+      }
       .footer {
         background-color: black;
         display: block;
@@ -52,23 +75,25 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row mt-5 ms-3 p-3">
-        <div class="col-sm-8 col-xs-12">
-          <div class="card img-fluid">
-            <img
-              class="card-img-top"
-              src="img/aboutme.jpeg"
-              alt="Card image"
-              style="width: 100%"
-            />
-            <div class="card-img-overlay mx-auto p-3">
+    <div class="container-fluid hero-image px-0">
+      <div class="row py-5">
+        <div class="col-md-8">
+          <div 
+            class="card contact-card text-white"
+            style="
+              background: linear-gradient(
+                rgba(143, 103, 103, 0.5),
+                rgba(0, 0, 0, 0.5)
+              );
+            "
+          >
+            <div class="card-body">
               <h1 class="card-title">Contact</h1>
               <hr />
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12"></div>
+        <div class="col-md-4"></div>
       </div>
     </div>
     <footer class="footer p-3">
