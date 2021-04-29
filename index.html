@@ -13,11 +13,22 @@
       body,
       html {
         height: 100%;
-        background-color:rgb(121, 119, 238);
+        background-color: black;
       }
-      .navbar {
-        background-color: rgb(44, 52, 61);
-        opacity: 0.5;
+      nav {
+        background-color: black;
+      }
+      .hero-image {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("img/hero.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
       }
       .navbar-brand,
       .about-card {
@@ -26,6 +37,7 @@
       }
       .about-card {
         margin-right: 30px;
+        background: rgba(222, 184, 135, 0.5);
       }
       .footer {
         background-color:rgb(44, 52, 61);
@@ -73,15 +85,10 @@
     <!-- Bootstrap 4 -- px-0 removes padding for container to fill entire width of viewport -->
     <main class="container-fluid hero-image px-0">
       <div class="row py-5">
-        <div class="col-md-8">
+        <div class="col-sm-1 col-xs-12"></div>
+        <div class="col-sm-10 col-xs-12 mx-auto">
           <div
-            class="card about-card text-white"
-            style="
-              background: linear-gradient(
-                rgba(143, 103, 103, 0.5),
-                rgba(0, 0, 0, 0.5)
-              );
-            "
+            class="card about-card p-3"
           >
             <div class="card-body">
               <h1 class="card-title">About Me</h1>
@@ -89,7 +96,7 @@
               <img
                 src="img/profile.jpeg"
                 alt="Stefanie Serpa's Headshot"
-                style="width: 13rem"
+                style="width: 13rem;"
                 class="me-2 mb-2 float-left"
               />
               <p class="card-text">
@@ -106,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-sm-1 col-xs-12"></div>
       </div>
     </main>
     <!-- Footer -->
